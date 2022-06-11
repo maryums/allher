@@ -1,0 +1,39 @@
+
+
+.connection {
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.connection-left img {
+    width: 100%;
+    border-radius: 35px;
+}
+
+.connection-right {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+}
+
+.connection-right h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.connection-description {
+    margin-top: 1.1rem;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.connection {
+    display: flex;
+    flex-direction: column;
+}
+    
+
+}
