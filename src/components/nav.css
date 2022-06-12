@@ -206,10 +206,7 @@
       }
       .mobile-items > * {
         padding: 16px 24px;
-        border-top: 1px solid lightgrey;
-      }
-      .mobile-items li:last-of-type {
-        border-bottom: 1px solid lightgrey;
+
       }
       .offers {
         background: black;

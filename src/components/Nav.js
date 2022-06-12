@@ -1,18 +1,14 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import './nav.css';
 import logo from '../images/all-her-logo.png'
 
 const Nav = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
-    const [isLiCliced, setIsLiClicke] = useState(false)
 
     const handleClick = () => {
         setIsNavExpanded(!isNavExpanded)
 
-    }
-    const handleLiClick = () => {
-        setIsLiClicke(!isLiCliced)
-        console.log("opposite clicked")
     }
 
     return (
@@ -22,7 +18,7 @@ const Nav = () => {
 
                     <div className="brand">
                         <a href="index.html">
-                            <img className="nav-brand" src={logo} /></a>
+                            <img className="nav-brand" src={logo} alt="all her logo" /></a>
                         <div
                             className={isNavExpanded ? "burger open" : "burger"}
                             id="nav-icon1"
@@ -35,10 +31,10 @@ const Nav = () => {
 
                     <div className="nav-items">
                         <ul className="nav">
-                            <li> <a href="#about" className="hvr-float"> About Us</a> </li>
-                            <li> <a href="#mission" className="hvr-float"> Mission</a> </li>
-                            <li> <a href="#services" className="hvr-float"> Services</a> </li>
-                            <li> <a href="#" className="hvr-float"> Events</a> </li>
+                            <li className="hvr-float"> <Link to="/about">About Us</Link></li>
+                            <li className="hvr-float"> <Link to="/mission">Mission</Link></li>
+                            <li className="hvr-float"> <Link to="/services">Services</Link></li>
+                            <li className="hvr-float"> <Link to="/events">Events</Link></li>
                         </ul>
                     </div>
 
@@ -48,10 +44,10 @@ const Nav = () => {
 
                     <div className={isNavExpanded ? "mobile-nav active" : "mobile-nav"} >
                         <ul className="mobile-items">
-                            <li className="mobile-links" onClick={handleClick}> <a href="#"> Card </a></li>
-                            <li className="mobile-links" onClick={handleClick}> <a href="#"> App </a></li>
-                            <li className="mobile-links" onClick={handleClick}> <a href="#"> Resources </a></li>
-                            <li className="mobile-links" onClick={handleClick}> <a href="#"> Sign In </a></li>
+                            <li className="mobile-links" onClick={handleClick}> <Link to="/about">About Us</Link></li>
+                            <li className="mobile-links" onClick={handleClick}> <Link to="/mission">Mission</Link></li>
+                            <li className="mobile-links" onClick={handleClick}> <Link to="/services">Services</Link></li>
+                            <li className="mobile-links" onClick={handleClick}> <Link to="/events">Events</Link></li>
                             <li class="mobile-links offers"> <a href="#"> Donate </a></li>
                         </ul>
                     </div>

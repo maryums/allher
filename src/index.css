@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap');
+
 :root {
   --primary-bg: #cda63c;
   --secondary-bg: #ffe7d8;
@@ -26,6 +28,7 @@ html {
 
 body {
   background-color: var(--secondary-bg);
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
