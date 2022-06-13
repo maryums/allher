@@ -6,7 +6,7 @@ const Connection = () => {
     return (
         <section class="section connection" id="mission">
             <div className="connection-left">
-                <img src={image}></img>
+                <img src={image} alt="all her women"></img>
             </div>
 
             <div className="connection-right">

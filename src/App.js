@@ -10,7 +10,6 @@ import Events from './components/Events';
 
 const App = () => {
 
-
   return (
     <>
       <Nav />

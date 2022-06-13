@@ -46,21 +46,36 @@ footer button, input, label {
     text-transform: uppercase;
 }
 
+footer button {
+    background-color: var(--secondary-bg);
+}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 1050px)  {
-
     .footer-links, .footer-form  {
         margin: 1.1rem;
     }
-
   }
 
   @media only screen and (max-width: 600px) {
     .inner-footer {
-        padding-top: 1rem;
+        padding-top: .5rem;
         flex-direction: column;
         align-items: center;
+    }
+    .inner-footer form {
+        display: flex;
+    }
+    .footer-links, .footer-form  {
+        margin: .3rem 0;
+        display: flex;
+    }
+    footer button, input, label {
+        width: 100%;
+        padding: 3px;
+        margin: 5px 3px;
+        font-size: .8rem;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
     }
 
 }

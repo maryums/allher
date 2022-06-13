@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './footer.css'
-import logo from '../images/all-her-logo.png'
 import { TbBrandInstagram } from 'react-icons/tb'
 import { AiOutlineFacebook } from 'react-icons/ai'
 import { FiTwitter } from 'react-icons/fi'
@@ -43,10 +42,10 @@ const Footer = () => {
 
                 <div className="footer-links">
                     <ul>
-                        <li> <TbBrandInstagram /> </li>
-                        <li> <AiOutlineFacebook /> </li>
-                        <li> <FiTwitter /> </li>
-                        <li> <AiOutlineYoutube /> </li>
+                        <li className="hvr-float"> <TbBrandInstagram /> </li>
+                        <li className="hvr-float"> <AiOutlineFacebook /> </li>
+                        <li className="hvr-float"> <FiTwitter /> </li>
+                        <li className="hvr-float"> <AiOutlineYoutube /> </li>
                     </ul>
 
 

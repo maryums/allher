@@ -48,7 +48,7 @@ const Nav = () => {
                             <li className="mobile-links" onClick={handleClick}> <Link to="/mission">Mission</Link></li>
                             <li className="mobile-links" onClick={handleClick}> <Link to="/services">Services</Link></li>
                             <li className="mobile-links" onClick={handleClick}> <Link to="/events">Events</Link></li>
-                            <li class="mobile-links offers"> <a href="#"> Donate </a></li>
+                            <li class="mobile-links offers"> <a href="https://www.paypal.com/donate/buttons"> Donate </a></li>
                         </ul>
                     </div>
                 </div>
